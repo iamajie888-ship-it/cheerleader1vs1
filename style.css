@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+h1 { color: #d63384; margin-bottom: 10px; font-size: 1.8em; }
+p { color: #666; margin-bottom: 30px; }
+
+#match-display {
+    background: #f8f9fa;
+    border: 3px solid #e9ecef;
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin: 30px 0;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.player-name {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: black;
+    padding: 15px 25px;
+    background: white;
+    border-radius: 12px;
+    border: 3px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 120px;
+}
+
+.player-name:hover {
+    transform: scale(1.05);
+    border-color: #d63384;
+    box-shadow: 0 5px 15px rgba(214,51,132,0.3);
+}
+
+#vs {
+    font-size: 2.2em;
+    color: #f44336;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+#progress {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#results h2 { color: #28a745; margin-bottom: 20px; }
+#results h3 { color: #ffc107; margin-top: 30px; }
+
+#top3 li {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#top10 {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+#top10 li {
+    padding: 8px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+button:hover { background: #218838; }
+
+@media (max-width: 480px) {
+    .container { padding: 30px 20px; }
+    .player-name { font-size: 1.4em; min-width: 100px; }
+    #vs { font-size: 1.8em; }
+}
