@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    background: white;
+    border-radius: 25px;
+    padding: 40px 30px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+h1 { color: #d63384; margin-bottom: 10px; font-size: 1.9em; }
+p { color: #666; margin-bottom: 30px; font-size: 1.1em; }
+
+#match-display {
+    background: #f8f9fa;
+    border: 4px solid #e9ecef;
+    border-radius: 20px;
+    padding: 45px 25px;
+    margin: 30px 0;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.player-name {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: black;
+    padding: 18px 28px;
+    background: white;
+    border-radius: 15px;
+    border: 4px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 130px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.player-name:hover {
+    transform: scale(1.08);
+    border-color: #d63384;
+    box-shadow: 0 8px 25px rgba(214,51,132,0.4);
+}
+
+#vs {
+    font-size: 2.5em;
+    color: #f44336;
+    font-weight: bold;
+    margin: 0 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#progress {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#stage-title {
+    background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 15px;
+    display: none;
+    box-shadow: 0 4px 12px rgba(255,107,107,0.3);
+}
+
+#results h2 { color: #28a745; margin-bottom: 25px; font-size: 1.8em; }
+#results h3 { color: #ffc107; margin: 35px 0 20px 0; font-size: 1.4em; }
+
+#top10-final li {
+    background: linear-gradient(45deg, #28a745, #20c997, #17a2b8);
+    color: white;
+    padding: 20px 25px;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-size: 1.35em;
+    font-weight: bold;
+    box-shadow: 0 6px 20px rgba(40,167,69,0.3);
+}
+
+#top3 li {
+    background: linear-gradient(45deg, #ffd700, #ffed4e, #ff6b6b);
+    color: #333;
+    padding: 25px 30px;
+    margin: 12px 0;
+    border-radius: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 8px 25px rgba(255,215,0,0.5);
+}
+
+button {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+    border: none;
+    padding: 18px 45px;
+    font-size: 1.25em;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(40,167,69,0.3);
+}
+
+button:hover { 
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(40,167,69,0.4);
+}
+
+@media (max-width: 480px) {
+    .container { padding: 30px 20px; }
+    .player-name { font-size: 1.45em; min-width: 110px; padding: 15px 20px; }
+    #vs { font-size: 2em; }
+    h1 { font-size: 1.6em; }
+}
